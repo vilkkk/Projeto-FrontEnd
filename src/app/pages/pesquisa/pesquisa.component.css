@@ -1,0 +1,155 @@
+/* Container Principal */
+.pesquisa-container {
+  padding: 20px;
+  background-color: #141414;
+  color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Barra de Busca */
+.search-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #333;
+  color: #f0f0f0;
+  font-size: 16px;
+}
+
+.search-button,
+.clear-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-button {
+  background-color: #e50914;
+  color: white;
+}
+
+.clear-button {
+  background-color: #444;
+  color: white;
+}
+
+/* Grid de Livros */
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Estilo dos Livros */
+.book-card {
+  background-color: #333;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 280px;
+  margin: auto;
+}
+
+.book-cover {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.book-title {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.book-authors,
+.book-publisher,
+.book-description {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* Botões de Detalhes e Favoritos */
+.details-button,
+.favorite-button,
+.unfavorite-button {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  width: 100%;
+}
+
+.details-button {
+  background-color: #e50914;
+}
+
+.details-button:hover {
+  background-color: #b20710;
+}
+
+.favorite-button {
+  background-color: #28a745;
+}
+
+.favorite-button:hover {
+  background-color: #218838;
+}
+
+.unfavorite-button {
+  background-color: #dc3545;
+}
+
+.unfavorite-button:hover {
+  background-color: #c82333;
+}
+
+/* Espaçamento entre botões */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .search-input {
+    font-size: 14px;
+  }
+
+  .book-title {
+    font-size: 16px;
+  }
+
+  .book-authors,
+  .book-publisher,
+  .book-description {
+    font-size: 12px;
+  }
+
+  .buttons {
+    gap: 10px;
+  }
+}
